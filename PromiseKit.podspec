@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.authors  = { 'Max Howell' => 'mxcl@me.com' }
   s.documentation_url = 'http://promisekit.org/introduction'
   s.default_subspecs = 'Foundation', 'UIKit'
-  s.ios.default_subspecs = 'QuartzCore'
+  s.ios.default_subspecs = 'QuartzCore', 'Foundation', 'UIKit'
   s.requires_arc = true
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.9'
