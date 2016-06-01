@@ -5,6 +5,7 @@
 //  Copyright (c) 2014 Aluxoft SCP. All rights reserved.
 //
 
+#if !os(watchOS)
 #import <QuartzCore/QuartzCore.h>
 #import <PromiseKit/AnyPromise.h>
 
@@ -38,3 +39,5 @@
 - (AnyPromise *)promiseAnimation:(CAAnimation *)animation forKey:(NSString *)key;
 
 @end
+
+#endif

@@ -14,7 +14,6 @@ Pod::Spec.new do |s|
   s.authors  = { 'Max Howell' => 'mxcl@me.com' }
   s.documentation_url = 'http://promisekit.org/introduction'
   s.default_subspecs = 'Foundation', 'UIKit'
-  s.ios.default_subspecs = 'QuartzCore'
   s.requires_arc = true
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.9'
@@ -122,13 +121,6 @@ Pod::Spec.new do |s|
     ss.ios.source_files = 'Categories/Photos/*'
     ss.dependency 'PromiseKit/CorePromise'
     ss.ios.frameworks = 'Photos'
-  end
-
-  s.subspec 'QuartzCore' do |ss|
-    ss.ios.source_files = 'Categories/QuartzCore/*'
-	ss.osx.source_files = 'Categories/QuartzCore/*'
-    ss.dependency 'PromiseKit/CorePromise'
-    ss.frameworks = 'QuartzCore'
   end
 
   s.subspec 'Social' do |ss|

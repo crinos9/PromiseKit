@@ -5,6 +5,8 @@
 //  Copyright (c) 2014 Aluxoft SCP. All rights reserved.
 //
 
+
+#if !os(watchOS)
 #import <QuartzCore/CAAnimation.h>
 #import "CALayer+AnyPromise.h"
 
@@ -37,3 +39,5 @@
 }
 
 @end
+
+#endif
