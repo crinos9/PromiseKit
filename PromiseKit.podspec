@@ -13,7 +13,8 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/mxcl'
   s.authors  = { 'Max Howell' => 'mxcl@me.com' }
   s.documentation_url = 'http://promisekit.org/introduction'
-  s.default_subspecs = 'Foundation', 'UIKit', 'QuartzCore'
+  s.default_subspecs = 'Foundation', 'UIKit'
+  s.ios.default_subspecs = 'QuartzCore'
   s.requires_arc = true
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.9'
